@@ -18,8 +18,8 @@
         <small>Breve introduccion al caos!</small>
     </div>
 <!------------------------------------------------------------------->
-<!--    <div id="alternativo"><h1>Titulo alternativo</h1></div>-->
-<!--    ------------------------------------------------------------->
+    <div id="alternativo"><h1>Titulo alternativo</h1></div>
+<!------------------------------------------------------------------->
 
     <div id="social-networks-wrapper">
         <a href="#" title="google plus"><img src="images/google-plus-color.png" alt="" class="social-networks"></a>

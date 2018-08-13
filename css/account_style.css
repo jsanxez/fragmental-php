@@ -22,7 +22,7 @@ div#content-wrapper {
 
 #account-wrapper #nav-links li {
     box-sizing: border-box;
-    border-radius: 0px 5px 0px 15px;
+    /*border-radius: 0px 5px 0px 15px;*/
     color: #416e84;
     display: inline-block;
     font-size: 1.3rem;

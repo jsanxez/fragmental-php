@@ -26,11 +26,11 @@
     <div id="account-wrapper">
 
         <ul id="nav-links">
-            <a href="">
+            <a href="login.php">
                 <li>Sign in</li>
             </a>
-            <a href="">
-                <li style="border-bottom: 1px solid; border-left: 1px solid;background-color: #3992b2">Register</li>
+            <a href="register.php">
+                <li style="border-bottom: 1px solid; border-left: 1px solid; border-radius: 0px 5px 0px 15px;background-color: #3992b2">Register</li>
             </a>
         </ul>
 
@@ -42,8 +42,8 @@
             <label for="recuerdame">Recuerdame</label>
             <a href="">Olvidaste tu contraseña?</a><br><br>
             <input type="submit" name="login" value="Ingresar"><br><br>
-            <?php
 
+            <?php
             if (isset($_POST["login"])) {
 
                 $user = $_POST["user"];
@@ -67,9 +67,8 @@
                     echo "<span style='color: red;'>Usuario o contraseña inválidos!</span>";
 
             }
-
-
             ?>
+
         </form>
 
 

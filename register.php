@@ -26,33 +26,22 @@
     <div id="account-wrapper">
 
         <ul id="nav-links">
-            <a href="">
-                <li>Sign in</li>
+            <a href="login.php">
+                <li style="border-bottom: 1px solid; border-left: 1px solid; border-radius: 5px 0px 15px 0px;background-color: #3992b2">Sign in</li>
             </a>
-            <a href="">
-                <li style="border-bottom: 1px solid; border-left: 1px solid;background-color: #3992b2">Register</li>
+            <a href="register.php">
+                <li">Register</li>
             </a>
         </ul>
 
-        <form id="sign-in" action="login.php">
-            <input type="text" placeholder="Usuario"><br>
-            <input type="password" placeholder="Contraseña"><br><br>
-            <input type="checkbox" id="recuerdame">
-            <label for="recuerdame">Recuerdame</label>
-            <a href="">Olvidaste tu contraseña?</a><br><br>
-            <input type="submit" value="Ingresar"><br><br>
+        <form id="sign-in" action="register.php">
+            <input type="text" name="user" placeholder="Nombre de usuario"><br>
+            <input type="text" name="pass" placeholder="Contraseña"><br>
+            <input type="text" name="pass2" placeholder="Confirmar Contraseña"><br>
+            <input type="text" name="email" placeholder="Correo electronico"><br><br>
+            <input type="submit" name="register" value="Registrarse">
         </form>
-        <!--
 
-        <form action="#">
-            <h3>Crear cuenta:</h3>
-            <input type="text" placeholder="Nombre de usuario" t><br>
-            <input type="text" placeholder="Contraseña"><br>
-            <input type="text" placeholder="Confirmar Contraseña"><br>
-            <input type="text" placeholder="Correo electronico"><br><br>
-            <input type="submit" value="Registrarse">
-        </form>
--->
     </div>
 
 
