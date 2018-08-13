@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-<!--    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/account_style.css">
     <title>FRAGMENTAL</title>
@@ -34,26 +34,48 @@
             </a>
         </ul>
 
-        <form id="sign-in" action="mostrar.php">
-            <input type="text" placeholder="Usuario"><br>
-            <input type="password" placeholder="Contraseña"><br><br>
+        <form id="sign-in" action="login.php" method="POST">
+
+            <input type="text" name="user" placeholder="Usuario"><br>
+            <input type="password" name="pass" placeholder="Contraseña"><br><br>
             <input type="checkbox" id="recuerdame">
             <label for="recuerdame">Recuerdame</label>
             <a href="">Olvidaste tu contraseña?</a><br><br>
-            <input type="submit" value="Ingresar"><br><br>
-        </form>
-        <!--
+            <input type="submit" name="login" value="Ingresar"><br><br>
+            <?php
 
-        <form action="#">
-            <h3>Crear cuenta:</h3>
-            <input type="text" placeholder="Nombre de usuario" t><br>
-            <input type="text" placeholder="Contraseña"><br>
-            <input type="text" placeholder="Confirmar Contraseña"><br>
-            <input type="text" placeholder="Correo electronico"><br><br>
-            <input type="submit" value="Registrarse">
+            if (isset($_POST["login"])) {
+
+                $user = $_POST["user"];
+                $pass = $_POST["pass"];
+
+                require "conexion.php";
+
+                $query = "select user_name, user_pass from users where user_name='$user' and user_pass='$pass'";
+                $resultado = mysqli_query($conexion, $query);
+
+                $afectadas = mysqli_affected_rows($conexion);
+
+                /*while ($fila=mysqli_fetch_row($resultado)) {
+                    echo $fila[0] . " ";
+                    echo $fila[1] . " ";
+                }*/
+
+                if ($afectadas==1)
+                    header("Location:admin.php");
+                else
+                    echo "<span style='color: red;'>Usuario o contraseña inválidos!</span>";
+
+            }
+
+
+            ?>
         </form>
--->
+
+
+
     </div>
+</div>
 
 
     <div style="clear: both;"></div>
@@ -79,5 +101,4 @@
 
 </footer>
 </body>
-
 </html>

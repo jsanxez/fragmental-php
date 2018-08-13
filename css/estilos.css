@@ -1,3 +1,7 @@
+/*header #alternativo {*/
+    /*background-color: yellow;*/
+/*}*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,7 +10,7 @@
 
 body {
     font-family: 'Cantarell', sans-serif;
-    /*    font-weight: normal;*/
+    /* line-height: 1.2em; */
 }
 
 header {
@@ -61,7 +65,6 @@ header .social-networks {
 }
 
 header #account {
-    background-color: yellow;
     border-right: 1px solid #38758c;
     float: right;
     padding: 10px;
@@ -69,10 +72,6 @@ header #account {
     margin-right: 0.5%;
     /* clear: right; */
     /* overflow: hidden; */
-}
-header #cajita {
-    border: 1px solid;
-    background-color: yellow;
 }
 
 header #account a {
@@ -110,7 +109,7 @@ nav#menu-bar ul li {
     display: inline-block;
     margin-top: 1px;
     margin-right: 0.1px;
-    padding: 5px 10px;
+    padding: 2px 10px;
     border-radius: 2px;
     box-shadow: 2px 2px 2px #43617D;
 }
@@ -239,7 +238,7 @@ nav#tabs-widget ul li {
     box-shadow: 2px 2px 2px #43617D;
     display: inline-block;
     margin: 1px 0px;
-    padding: 3.5px 10px;
+    padding: 2px 7px;
 }
 
 nav#tabs-widget ul li a {

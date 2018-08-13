@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/estilos.css">
-<!--        <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">
     <title>FRAGMENTAL</title>
 </head>
 
@@ -17,8 +17,9 @@
         <h1><a href="index.php">Frag~Mental</a></h1>
         <small>Breve introduccion al caos!</small>
     </div>
-
-
+<!------------------------------------------------------------------->
+<!--    <div id="alternativo"><h1>Titulo alternativo</h1></div>-->
+<!--    ------------------------------------------------------------->
 
     <div id="social-networks-wrapper">
         <a href="#" title="google plus"><img src="images/google-plus-color.png" alt="" class="social-networks"></a>
@@ -27,11 +28,7 @@
     </div>
 
     <div id="account">
-        <a href="account.php">Ingresar / Registrarse</a>
-    </div>
-
-    <div id="cajita">
-        <small>TODOS LOS GRANDISIMOS DERECHOS RESERVADOS!</small>
+        <a href="login.php">Ingresar / Registrarse</a>
     </div>
 
     <nav id="menu-bar">
