@@ -41,15 +41,16 @@
             <input type="checkbox" id="recuerdame">
             <label for="recuerdame">Recuerdame</label>
             <a href="">Olvidaste tu contraseña?</a><br><br>
-            <input type="submit" name="login" value="Ingresar"><br><br>
+
+            <input type="submit" name="login" value="Ingresar"><br>
 
             <?php
             if (isset($_POST["login"])) {
 
+                require "conexion.php";
+
                 $user = $_POST["user"];
                 $pass = $_POST["pass"];
-
-                require "conexion.php";
 
                 $query = "select user_name, user_pass from users where user_name='$user' and user_pass='$pass'";
                 $resultado = mysqli_query($conexion, $query);
@@ -71,11 +72,7 @@
 
         </form>
 
-
-
     </div>
-</div>
-
 
     <div style="clear: both;"></div>
 </div>

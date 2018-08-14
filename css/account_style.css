@@ -3,6 +3,7 @@ div#content-wrapper {
     background-color: #F4F4F4;
     padding: 2.5% 1%;
     height: 420px;
+    max-height: 80%;/*--------------------------draft*/
 }
 
 #content-wrapper #account-wrapper {
@@ -39,7 +40,8 @@ div#content-wrapper {
 }
 
 form#sign-in input[type=text],
-#sign-in input[type=password] {
+#sign-in input[type=password],
+#sign-in input[type=email] {
     /*    background-color: skyblue;*/
     border: none;
     box-sizing: border-box;
